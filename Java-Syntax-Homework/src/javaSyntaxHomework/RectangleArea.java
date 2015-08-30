@@ -1,5 +1,6 @@
 package javaSyntaxHomework;
 import java.util.Scanner;
+import static java.lang.System.out;
 
 public class RectangleArea {
 
@@ -10,7 +11,7 @@ public class RectangleArea {
 		double sideALength = in.nextDouble();
 		double sideBLength = in.nextDouble();
 		
-		System.out.print(calculateRectangleArea(sideALength, sideBLength));
+		out.print(calculateRectangleArea(sideALength, sideBLength));
 		
 		in.close();
 	}

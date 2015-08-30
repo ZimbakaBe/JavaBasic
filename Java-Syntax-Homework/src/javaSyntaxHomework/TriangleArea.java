@@ -9,16 +9,16 @@ public class TriangleArea {
 		Scanner in = new Scanner(System.in);
 		
 		//first point
-		double x1 = in.nextInt();
-		double y1 = in.nextInt();
+		double x1 = in.nextDouble();
+		double y1 = in.nextDouble();
 		
 		//second point
-		double x2 = in.nextInt();
-		double y2 = in.nextInt();
+		double x2 = in.nextDouble();
+		double y2 = in.nextDouble();
 		
 		//third point
-		double x3 = in.nextInt();
-		double y3 = in.nextInt();
+		double x3 = in.nextDouble();
+		double y3 = in.nextDouble();
 		
 		out.println(CalculateTriangleAreaByGivenPoints(x1, x2, x3, y1, y2, y3));
 		
