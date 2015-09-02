@@ -30,11 +30,6 @@ public class PointsInsideAFigure {
 			isInside = true;
 		}
 		
-		printPointPosition(isInside);
-	}
-	
-	public static void printPointPosition(boolean isInside) {
-		
 		if(isInside == true) {
 			out.println("Inside");
 		}

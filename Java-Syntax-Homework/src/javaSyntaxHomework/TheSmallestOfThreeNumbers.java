@@ -12,12 +12,12 @@ public class TheSmallestOfThreeNumbers {
 		double secondNumber = in.nextDouble();
 		double thirdNumber = in.nextDouble();
 		
-		out.println(CheckForSmallestNumber(firstNumber,secondNumber,thirdNumber));
+		out.println(getSmallestNumber(firstNumber,secondNumber,thirdNumber));
 		
 		in.close();
 	}
 	
-	public static double CheckForSmallestNumber(double firstNumber, double secondNumber, double thirdNumber) {
+	public static double getSmallestNumber(double firstNumber, double secondNumber, double thirdNumber) {
 		
 		double smallestNumber = firstNumber;
 		double[] allNumbers = new double[] {secondNumber, thirdNumber};
