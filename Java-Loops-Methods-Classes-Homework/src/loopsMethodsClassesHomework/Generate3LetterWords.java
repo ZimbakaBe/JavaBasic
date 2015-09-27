@@ -37,7 +37,7 @@ public class Generate3LetterWords {
 		}
 		
 		for(String word : words) {
-			System.out.println(word);
+			System.out.print(word + " ");
 		}
 		
 	}
