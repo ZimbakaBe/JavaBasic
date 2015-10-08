@@ -1,18 +1,20 @@
 package geometry.Classes.PlaneShapes;
 
+import java.util.List;
+
 import geometry.Vertices.Vertex;
 
 public class Rectangle extends PlaneShape {
 
 	private double width;
 	private double height;
-	
-	public Rectangle(Vertex vertex, double width, double height) {
+
+	public Rectangle(List<Vertex> vertex, double width, double height) {
 		super(vertex);
-		this.setWidth(width);
 		this.setHeight(height);
+		this.setWidth(width);
 	}
-	
+
 	public double getWidth() {
 		return this.width;
 	}

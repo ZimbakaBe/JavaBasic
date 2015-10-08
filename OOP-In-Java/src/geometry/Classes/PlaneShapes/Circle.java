@@ -1,12 +1,14 @@
 package geometry.Classes.PlaneShapes;
 
+import java.util.List;
+
 import geometry.Vertices.Vertex;
 
 public class Circle extends PlaneShape {
 
 	private double radius;
 	
-	public Circle(Vertex vertex, double radius) {
+	public Circle(List<Vertex> vertex, double radius) {
 		super(vertex);
 		this.setRadius(radius);
 	}

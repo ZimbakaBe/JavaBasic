@@ -1,5 +1,7 @@
 package geometry;
 
+import java.awt.List;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -14,9 +16,9 @@ public class GeometryMain {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Shape triangle = new Triangle(
-				new Vertex(1,2),
-				new Vertex(3,4),
-				new Vertex(5,6));
+				new ArrayList<Vertex>());
+		triangle.getX();
+		
 		Shape rectangle = new Rectangle(
 				new Vertex(3,5),
 				6,7);
@@ -55,5 +57,4 @@ public class GeometryMain {
         	.sorted(Comparator.comparing(PlaneShape::getPerimeter))
         	.forEach(shape -> System.out.println(shape));
 	}
-
 }

@@ -1,5 +1,7 @@
 package geometry.Classes.SpaceShapes;
 
+import java.util.List;
+
 import geometry.Vertices.Vertex;
 
 public class Cuboid extends SpaceShape {
@@ -8,7 +10,7 @@ public class Cuboid extends SpaceShape {
 	private double height;
 	private double depth;
 	
-	public Cuboid(Vertex vertex, double width, double height, double depth) {
+	public Cuboid(List<Vertex> vertex, double width, double height, double depth) {
 		super(vertex);
 		this.setWidth(width);
 		this.setHeight(height);

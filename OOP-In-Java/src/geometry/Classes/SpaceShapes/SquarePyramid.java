@@ -1,5 +1,7 @@
 package geometry.Classes.SpaceShapes;
 
+import java.util.List;
+
 import geometry.Vertices.Vertex;
 
 public class SquarePyramid extends SpaceShape {
@@ -7,7 +9,7 @@ public class SquarePyramid extends SpaceShape {
 	private double width;
 	private double height;
 	
-	public SquarePyramid(Vertex vertex, double width, double height) {
+	public SquarePyramid(List<Vertex> vertex, double width, double height) {
 		super(vertex);
 		this.setWidth(width);
 		this.setHeight(height);

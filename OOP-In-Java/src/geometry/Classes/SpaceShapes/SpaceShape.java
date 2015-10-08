@@ -1,24 +1,24 @@
 package geometry.Classes.SpaceShapes;
 
+import java.util.List;
+
 import geometry.Classes.Shape;
 import geometry.Interfaces.*;
 import geometry.Vertices.*;
 
 public abstract class SpaceShape extends Shape implements AreaMeasurable, VolumeMeasurable {
 	
-	public SpaceShape(Vertex vertex) {
+
+	public SpaceShape(List<Vertex> vertex) {
 		super(vertex);
 	}
-	
-	public abstract double getArea();
-	public abstract double getVolume();
-	
+
 	@Override
 	public String toString() {
-		String coordinates = String.format("Coordinates: [x = %.2f, y = %.2f, z = %.2f]", 
-							this.getVertex().getX(),
-							this.getVertex().getY(),
-							this.getVertex().getZ());
+		String coordinates = String.format("Coordinates: [x = %.2d, y = %.2d, z = %.2d]", 
+							this.getVertex().get(0).getX(),
+							this.getVertex().get(0).getY(),
+							this.getVertex().get(0).getZ());
 		
 		String area = String.format("Area: %.2f", 
 									this.getArea());

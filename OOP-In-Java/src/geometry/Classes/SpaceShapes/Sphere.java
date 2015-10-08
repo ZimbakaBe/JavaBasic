@@ -1,12 +1,14 @@
 package geometry.Classes.SpaceShapes;
 
+import java.util.List;
+
 import geometry.Vertices.Vertex;
 
 public class Sphere extends SpaceShape{
 
 	private double radius;
-	
-	public Sphere(Vertex vertex, double radius) {
+
+	public Sphere(List<Vertex> vertex, double radius) {
 		super(vertex);
 		this.setRadius(radius);
 	}
